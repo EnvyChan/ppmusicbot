@@ -1,5 +1,9 @@
+console.log('Loading env vars ${process.env.TELEGRAM_TOKEN}');
 const _ = require('lodash');
-
+const dotenv = require('dotenv');
+dotenv.config();
+console.log('Loading env vars ${process.env.TELEGRAM_TOKEN}');
+console.log('Loading env vars');
 _.each([
   'HUBOT_NAME',
   'SPOTIFY_PLAYLIST_USER',

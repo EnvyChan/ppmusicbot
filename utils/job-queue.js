@@ -1,4 +1,7 @@
 const _ = require('lodash');
+console.log('running');
+const dotenv = require('dotenv');
+dotenv.config();
 const BPromise = require('bluebird');
 const redis = require('./redis').connect();
 
